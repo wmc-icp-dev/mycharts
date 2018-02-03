@@ -1,48 +1,57 @@
 apiVersion: v1
 entries:
+  kuardchart:
+  - apiVersion: v1
+    created: 2018-02-03T12:15:57.210685432-08:00
+    description: A Helm chart for Kubernetes
+    digest: fb3cbfd6de1beafcf1cc0c4f735f3c1434787b24da45cb11d2eef608cdad21ca
+    name: kuardchart
+    urls:
+    - https://wmc-icp-dev.github.io/mycharts/kuardchart-0.1.0.tgz
+    version: 0.1.0
   loyaltylevelchart:
   - apiVersion: v1
-    created: 2018-02-03T08:02:48.629148562-08:00
+    created: 2018-02-03T12:15:57.213435029-08:00
     description: A Helm chart for Kubernetes
     digest: 1aeff70adf435d5eca10b25398a480d553eb893542013baeaf0e4e69d7adc215
     name: loyaltylevelchart
     urls:
-    - https://wtistangdev.github.io/mycharts/loyaltylevelchart-0.1.0.tgz
+    - https://wmc-icp-dev.github.io/mycharts/loyaltylevelchart-0.1.0.tgz
     version: 0.1.0
   notificationchart:
   - apiVersion: v1
-    created: 2018-02-03T08:02:48.629401595-08:00
+    created: 2018-02-03T12:15:57.213827095-08:00
     description: A Helm chart for Kubernetes
     digest: 09f6125fccf2e445e9c59e080fbb5ea2157d2adb446b44e8d0059c9b9a16a48b
     name: notificationchart
     urls:
-    - https://wtistangdev.github.io/mycharts/notificationchart-0.1.0.tgz
+    - https://wmc-icp-dev.github.io/mycharts/notificationchart-0.1.0.tgz
     version: 0.1.0
   portfoliochart:
   - apiVersion: v1
-    created: 2018-02-03T08:02:48.62979063-08:00
+    created: 2018-02-03T12:15:57.21442344-08:00
     description: A Helm chart for Kubernetes
     digest: 1c623c2a0f4b5bac42c54dd0dbacd5783181c966180db6103f16e31a0e9f5a5f
     name: portfoliochart
     urls:
-    - https://wtistangdev.github.io/mycharts/portfoliochart-0.1.0.tgz
+    - https://wmc-icp-dev.github.io/mycharts/portfoliochart-0.1.0.tgz
     version: 0.1.0
   stockquotechart:
   - apiVersion: v1
-    created: 2018-02-03T08:02:48.630315525-08:00
+    created: 2018-02-03T12:15:57.214821191-08:00
     description: A Helm chart for Kubernetes
     digest: 863e41045ba185c19857e75054acdcd07094a421355912f78137fb98de080ee5
     name: stockquotechart
     urls:
-    - https://wtistangdev.github.io/mycharts/stockquotechart-0.1.0.tgz
+    - https://wmc-icp-dev.github.io/mycharts/stockquotechart-0.1.0.tgz
     version: 0.1.0
   traderchart:
   - apiVersion: v1
-    created: 2018-02-03T08:02:48.630800883-08:00
+    created: 2018-02-03T12:15:57.215451002-08:00
     description: A Helm chart for Kubernetes
     digest: 2688fdd14eb4dc97ac53312b3767243e6af9ac7945459d217d7b6826bb065465
     name: traderchart
     urls:
-    - https://wtistangdev.github.io/mycharts/traderchart-0.1.0.tgz
+    - https://wmc-icp-dev.github.io/mycharts/traderchart-0.1.0.tgz
     version: 0.1.0
-generated: 2018-02-03T08:02:48.628376028-08:00
+generated: 2018-02-03T12:15:57.20990207-08:00
