@@ -1,0 +1,49 @@
+#Deploy the pod
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kuard
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kuard
+    spec:
+      containers:
+      - name: kuard
+        image: gcr.io/kuar-demo/kuard-amd64:1
+        ports:
+          - containerPort: 8080
+        imagePullPolicy: IfNotPresent
+---
+#Deploy the service
+apiVersion: v1
+kind: Service
+metadata:
+  name: kuard-service
+  labels:
+    app: kuard
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+#     nodePort: 31000
+  selector:
+    app: kuard
+---   
+#Configure the ingress 
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+# annotations:
+#   ingress.kubernetes.io/rewrite-target: /trader
+  name: kuard-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /kuard
+        backend:
+          serviceName: kuard-service
+          servicePort: 8080
